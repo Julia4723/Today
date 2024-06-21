@@ -47,8 +47,7 @@ class ReminderListViewController: UICollectionViewController {
         updateSnapshot()
         
         collectionView.dataSource = dataSource
-        
-        
+      
     }
     
     //чтобы элемент не отображался как выбранный
