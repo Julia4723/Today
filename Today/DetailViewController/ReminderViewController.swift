@@ -20,6 +20,7 @@ class ReminderViewController: UICollectionViewController {
     
     
     var workingReminder: Reminder // это свойство хранит внесенные пользователем данные до того момента пока юзер не сохранит или не отмени изменения
+    var isAddingNewReminder = false //эта переменная указывает, добавляет ли пользователь новое напоминание или просматривает или редактирует существующее
     var onChange: (Reminder) -> Void
     private var dataSource: DataSource!
     
@@ -65,7 +66,11 @@ class ReminderViewController: UICollectionViewController {
         if editing {
             prepareForEditing()
         } else {
-            prepareForViewing()
+            if isAddingNewReminder {
+                onChange(workingReminder)
+            } else {
+                prepareForViewing()// вызывается если пользователь создает новое напонимание
+            }
         }
     }
     
