@@ -27,6 +27,7 @@
 		CE49EECD2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EECC2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift */; };
 		CE49EECF2C27E1D000DA70DD /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EECE2C27E1D000DA70DD /* TextViewContentView.swift */; };
 		CE49EED12C27E46100DA70DD /* DataPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */; };
+		CE49EED32C285A6200DA70DD /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CE49EECC2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
 		CE49EECE2C27E1D000DA70DD /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerContentView.swift; sourceTree = "<group>"; };
+		CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				CE01F9632C1F5D86000B0335 /* Reminder.swift */,
 				CE01F9652C1F75A9000B0335 /* Date + Today.swift */,
+				CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				CE01F94D2C1F5B2C000B0335 /* AppDelegate.swift in Sources */,
 				CE49EEC42C25D06200DA70DD /* PriorityContentView.swift in Sources */,
 				CE49EECD2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift in Sources */,
+				CE49EED32C285A6200DA70DD /* ReminderListStyle.swift in Sources */,
 				CE01F94F2C1F5B2C000B0335 /* SceneDelegate.swift in Sources */,
 				CE49EEC92C25D4D500DA70DD /* UIView + PinnedSubView.swift in Sources */,
 				CE49EECB2C25D8BD00DA70DD /* TextFieldContentView.swift in Sources */,
