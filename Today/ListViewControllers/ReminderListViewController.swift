@@ -80,10 +80,31 @@ class ReminderListViewController: UICollectionViewController {
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
         listConfiguration.showsSeparators = false
+        listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeAction
         listConfiguration.backgroundColor = .clear
         return UICollectionViewCompositionalLayout.list(using: listConfiguration)
         
     }
+    
+    
+    //объект связывет пользовательское действие прокрутки со строкой  в спискею Функция генерирует конфигурацию для каждого элемента в списке
+    private func makeSwipeAction(for indexPath: IndexPath?) -> UISwipeActionsConfiguration? {
+        
+        //извлекаем идентификатор из источника данных
+        guard let indexPath = indexPath, let id = dataSource.itemIdentifier(for: indexPath) else {return nil}
+        
+        //действие по удалению.
+        let deleteActionTitle = NSLocalizedString("Delete", comment: "Delete action title")//создаем заголовок для действия, когда пользователь проводит пальцем по строке
+        let deleteAction = UIContextualAction(style: .destructive, title: deleteActionTitle) { [weak self] _, _, completion in
+            self?.deleteReminder(withId: id)//удаление напоминания по идентификатору
+            self?.updateSnapshot()//обновление экрана
+            completion(false)
+            
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+ 
+    
 
 }
 
