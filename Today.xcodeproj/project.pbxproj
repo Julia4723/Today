@@ -19,6 +19,14 @@
 		CE01F96D2C201C97000B0335 /* ReminderListViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01F96C2C201C97000B0335 /* ReminderListViewController+Actions.swift */; };
 		CE01F96F2C208B59000B0335 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01F96E2C208B59000B0335 /* ReminderViewController.swift */; };
 		CE01F9722C20AA9A000B0335 /* ReminderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01F9712C20AA9A000B0335 /* ReminderViewController+Row.swift */; };
+		CE49EEC22C25BB0C00DA70DD /* ReminderViewController + Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EEC12C25BB0C00DA70DD /* ReminderViewController + Section.swift */; };
+		CE49EEC42C25D06200DA70DD /* PriorityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EEC32C25D06200DA70DD /* PriorityContentView.swift */; };
+		CE49EEC62C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EEC52C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift */; };
+		CE49EEC92C25D4D500DA70DD /* UIView + PinnedSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EEC82C25D4D500DA70DD /* UIView + PinnedSubView.swift */; };
+		CE49EECB2C25D8BD00DA70DD /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EECA2C25D8BD00DA70DD /* TextFieldContentView.swift */; };
+		CE49EECD2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EECC2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift */; };
+		CE49EECF2C27E1D000DA70DD /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EECE2C27E1D000DA70DD /* TextViewContentView.swift */; };
+		CE49EED12C27E46100DA70DD /* DataPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +44,14 @@
 		CE01F96C2C201C97000B0335 /* ReminderListViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+Actions.swift"; sourceTree = "<group>"; };
 		CE01F96E2C208B59000B0335 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		CE01F9712C20AA9A000B0335 /* ReminderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+Row.swift"; sourceTree = "<group>"; };
+		CE49EEC12C25BB0C00DA70DD /* ReminderViewController + Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController + Section.swift"; sourceTree = "<group>"; };
+		CE49EEC32C25D06200DA70DD /* PriorityContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityContentView.swift; sourceTree = "<group>"; };
+		CE49EEC52C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController + CellConfiguration.swift"; sourceTree = "<group>"; };
+		CE49EEC82C25D4D500DA70DD /* UIView + PinnedSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + PinnedSubView.swift"; sourceTree = "<group>"; };
+		CE49EECA2C25D8BD00DA70DD /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
+		CE49EECC2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
+		CE49EECE2C27E1D000DA70DD /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
+		CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 		CE01F94B2C1F5B2C000B0335 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				CE49EEC72C25D4A900DA70DD /* ContentViews */,
 				CE01F9702C20AA66000B0335 /* DetailViewController */,
 				CE01F9672C1F7883000B0335 /* ListViewControllers */,
 				CE01F9602C1F5B9B000B0335 /* Application */,
@@ -121,8 +138,23 @@
 			children = (
 				CE01F96E2C208B59000B0335 /* ReminderViewController.swift */,
 				CE01F9712C20AA9A000B0335 /* ReminderViewController+Row.swift */,
+				CE49EEC12C25BB0C00DA70DD /* ReminderViewController + Section.swift */,
+				CE49EEC32C25D06200DA70DD /* PriorityContentView.swift */,
+				CE49EEC52C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		CE49EEC72C25D4A900DA70DD /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE49EEC82C25D4D500DA70DD /* UIView + PinnedSubView.swift */,
+				CE49EECA2C25D8BD00DA70DD /* TextFieldContentView.swift */,
+				CE49EECC2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift */,
+				CE49EECE2C27E1D000DA70DD /* TextViewContentView.swift */,
+				CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */,
+			);
+			path = ContentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,12 +231,20 @@
 				CE01F9512C1F5B2C000B0335 /* ReminderListViewController.swift in Sources */,
 				CE01F9662C1F75A9000B0335 /* Date + Today.swift in Sources */,
 				CE01F94D2C1F5B2C000B0335 /* AppDelegate.swift in Sources */,
+				CE49EEC42C25D06200DA70DD /* PriorityContentView.swift in Sources */,
+				CE49EECD2C25DB9C00DA70DD /* UIContentConfiguration+Stateless.swift in Sources */,
 				CE01F94F2C1F5B2C000B0335 /* SceneDelegate.swift in Sources */,
+				CE49EEC92C25D4D500DA70DD /* UIView + PinnedSubView.swift in Sources */,
+				CE49EECB2C25D8BD00DA70DD /* TextFieldContentView.swift in Sources */,
+				CE49EECF2C27E1D000DA70DD /* TextViewContentView.swift in Sources */,
 				CE01F96F2C208B59000B0335 /* ReminderViewController.swift in Sources */,
 				CE01F9722C20AA9A000B0335 /* ReminderViewController+Row.swift in Sources */,
+				CE49EED12C27E46100DA70DD /* DataPickerContentView.swift in Sources */,
+				CE49EEC62C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift in Sources */,
 				CE01F9642C1F5D86000B0335 /* Reminder.swift in Sources */,
 				CE01F96B2C201BE4000B0335 /* ReminderDoneButton.swift in Sources */,
 				CE01F9692C1F78BA000B0335 /* ReminderListViewController + DataSource.swift in Sources */,
+				CE49EEC22C25BB0C00DA70DD /* ReminderViewController + Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

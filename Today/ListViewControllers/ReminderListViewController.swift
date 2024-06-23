@@ -17,12 +17,6 @@ class ReminderListViewController: UICollectionViewController {
 
         view.backgroundColor = .white
         
-        if #available(iOS 16, *){
-            navigationItem.style = .navigator
-        }
-
-        navigationItem.title = NSLocalizedString("Reminder", comment: "Reminder View controller title")
-        
         
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout //коллекцию не создавали, она уже есть в этом вью контроллере
@@ -63,7 +57,11 @@ class ReminderListViewController: UICollectionViewController {
         //функция принимает идентификатор напоминания
     func pushDetailViewForReminder(withId id: Reminder.ID) {
         let reminder = reminder(withId: id)
-        let viewController = ReminderViewController(reminder: reminder)
+        let viewController = ReminderViewController(reminder: reminder) {[weak self] reminder in
+            self?.updateReminder(reminder)//эта функция обновляет массив напоминаний в источнике данных отредактированным напоминанием
+            self?.updateSnapshot(realLoading: [reminder.id])//обновляет пользовательский интерфейс чтобы отразить отредактированное напоминание
+        }
+            
         navigationController?.pushViewController(viewController, animated: true)
     }
 

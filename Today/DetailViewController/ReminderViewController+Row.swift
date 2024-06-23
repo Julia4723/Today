@@ -9,10 +9,14 @@ import UIKit
 
 extension ReminderViewController {
     enum Row: Hashable {
+        case header(String) //строка будет использоваться как заголовок для каждого раздела
         case data
         case notes
         case time
         case title
+        //case editableText(String)
+        case editableDate(Date)
+        case editableText(String?)
         
         var imageName: String? {
             switch self {
@@ -34,8 +38,7 @@ extension ReminderViewController {
         
         var textStile: UIFont.TextStyle {
             switch self {
-            case .title:
-                return .headline
+            case .title: return .headline
             default: return .subheadline
             }
         }
