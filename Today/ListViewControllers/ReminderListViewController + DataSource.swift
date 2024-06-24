@@ -40,12 +40,14 @@ extension ReminderListViewController {
         let reminder = reminder(withId: id)
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = reminder.title
+        contentConfiguration.textProperties.color = .white
         contentConfiguration.secondaryText = reminder.dueDate.dayAndTimeText
+        contentConfiguration.secondaryTextProperties.color = .appLightBlue
         contentConfiguration.secondaryTextProperties.font = UIFont.preferredFont(forTextStyle: .caption1)
         cell.contentConfiguration = contentConfiguration
         
         var doneButtonConfiguration = doneButtonConfiguration(for: reminder)
-        doneButtonConfiguration.tintColor = .gray
+        doneButtonConfiguration.tintColor = .appLightBlue
         cell.accessories = [.customView(configuration: doneButtonConfiguration), .disclosureIndicator(displayed: .always)]
         
         cell.accessibilityCustomActions = [doneButtonAccessibilityAction(fir: reminder)]
@@ -53,7 +55,7 @@ extension ReminderListViewController {
         cell.accessibilityValue = reminder.isComplete ? reminderCompleteValue : reminderNotCompleteValue
         
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
-        backgroundConfiguration.backgroundColor = .white
+        backgroundConfiguration.backgroundColor = .clear
         cell.backgroundConfiguration = backgroundConfiguration
         
     }

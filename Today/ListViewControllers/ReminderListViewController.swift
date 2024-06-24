@@ -32,11 +32,13 @@ class ReminderListViewController: UICollectionViewController {
         }
         return progress
     }
-
+    
+    
+    //MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = .appDarkGradient
         
         
         let listLayout = listLayout()
@@ -84,6 +86,14 @@ class ReminderListViewController: UICollectionViewController {
       
     }
     
+    
+    
+   //MARK: - Life Cycle Methods
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshBackground()
+    }
+    
     //чтобы элемент не отображался как выбранный
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         
@@ -100,6 +110,16 @@ class ReminderListViewController: UICollectionViewController {
         progressView.progress = progress
     }
     
+    
+    //MARK: - Methods
+    func refreshBackground() {
+        collectionView.backgroundView = nil
+        let backgroundView = UIView()
+        let gradientLayer = CAGradientLayer.gradientLayer(for: listStyle, in: collectionView.frame)
+        backgroundView.layer.addSublayer(gradientLayer)
+        collectionView.backgroundView = backgroundView
+    }
+    
   
     
         //функция принимает идентификатор напоминания
@@ -113,6 +133,8 @@ class ReminderListViewController: UICollectionViewController {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
+    
+    //MARK: - Private Methods
     //создает новую переменную конфигурации списка с сгруппированным внешним видом.
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)

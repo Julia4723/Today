@@ -29,6 +29,7 @@
 		CE49EED12C27E46100DA70DD /* DataPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */; };
 		CE49EED32C285A6200DA70DD /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */; };
 		CE49EED52C28A4CD00DA70DD /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED42C28A4CD00DA70DD /* ProgressHeaderView.swift */; };
+		CE49EED72C2983DD00DA70DD /* CAGraadientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49EED62C2983DD00DA70DD /* CAGraadientLayer+ListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		CE49EED02C27E46100DA70DD /* DataPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerContentView.swift; sourceTree = "<group>"; };
 		CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 		CE49EED42C28A4CD00DA70DD /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
+		CE49EED62C2983DD00DA70DD /* CAGraadientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGraadientLayer+ListStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				CE01F9632C1F5D86000B0335 /* Reminder.swift */,
 				CE01F9652C1F75A9000B0335 /* Date + Today.swift */,
 				CE49EED22C285A6200DA70DD /* ReminderListStyle.swift */,
+				CE49EED62C2983DD00DA70DD /* CAGraadientLayer+ListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				CE49EECF2C27E1D000DA70DD /* TextViewContentView.swift in Sources */,
 				CE01F96F2C208B59000B0335 /* ReminderViewController.swift in Sources */,
 				CE01F9722C20AA9A000B0335 /* ReminderViewController+Row.swift in Sources */,
+				CE49EED72C2983DD00DA70DD /* CAGraadientLayer+ListStyle.swift in Sources */,
 				CE49EED12C27E46100DA70DD /* DataPickerContentView.swift in Sources */,
 				CE49EEC62C25D24200DA70DD /* ReminderViewController + CellConfiguration.swift in Sources */,
 				CE01F9642C1F5D86000B0335 /* Reminder.swift in Sources */,

@@ -84,8 +84,8 @@ class ProgressHeaderView: UICollectionReusableView {
         
         backgroundColor = .clear
         containerView.backgroundColor = .clear
-        upperView.backgroundColor = .gray
-        lowerView.backgroundColor = .black
+        upperView.backgroundColor = .appLightBlue
+        lowerView.backgroundColor = .appBlue
         
     }
 }
